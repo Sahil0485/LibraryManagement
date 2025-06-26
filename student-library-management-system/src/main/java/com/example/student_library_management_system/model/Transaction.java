@@ -24,6 +24,14 @@ public class Transaction {
     @Enumerated(value = EnumType.STRING)
     private TransactionType transactionType;
 
+    @JoinColumn
+    @ManyToOne
+    private Card card;
+
+    @JoinColumn
+    @ManyToOne
+    private Book book;
+
     public int getId() {
         return id;
     }

@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "cards")
@@ -30,6 +31,16 @@ public class Card {
     @Column(name = "updated_date", nullable = false)
     @UpdateTimestamp // when a card is updated it will automatically add date and time
     private Date updatedDate;
+
+    @JoinColumn
+    @OneToOne
+    private Student student;
+
+    @OneToMany(mappedBy = "card")
+    private List<Book> bookList;
+
+    @OneToMany(mappedBy = "card")
+    private List<Transaction> transactionList;
 
     public int getId() {
         return id;
