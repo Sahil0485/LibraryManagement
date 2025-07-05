@@ -64,6 +64,22 @@ public class Transaction {
         this.transactionType = transactionType;
     }
 
+    public Card getCard() {
+        return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
+    }
+
+    public Book getBook() {
+        return book;
+    }
+
+    public void setBook(Book book) {
+        this.book = book;
+    }
+
     @Override
     public String toString() {
         return "Transaction{" +

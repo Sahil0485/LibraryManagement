@@ -29,7 +29,7 @@ public class Author {
     private double rating;
 
     @OneToMany(mappedBy = "author")
-    private List<Book> book;
+    private List<Book> books;
 
     public int getId() {
         return id;
@@ -77,6 +77,14 @@ public class Author {
 
     public void setRating(double rating) {
         this.rating = rating;
+    }
+
+    public List<Book> getBooks() {
+        return books;
+    }
+
+    public void setBooks(List<Book> books) {
+        this.books = books;
     }
 
     @Override

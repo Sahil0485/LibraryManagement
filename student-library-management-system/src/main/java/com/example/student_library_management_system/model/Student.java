@@ -110,6 +110,14 @@ public class Student {
         this.dob = dob;
     }
 
+    public Card getCard() {
+        return card;
+    }
+
+    public void setCard(Card card) {
+        this.card = card;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
