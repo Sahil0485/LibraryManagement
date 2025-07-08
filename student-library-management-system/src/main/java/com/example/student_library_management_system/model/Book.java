@@ -115,7 +115,7 @@ public class Book {
         return author;
     }
 
-    public void setAuthor(Author author) {
+    public void setAuthor(int author) {
         this.author = author;
     }
 
