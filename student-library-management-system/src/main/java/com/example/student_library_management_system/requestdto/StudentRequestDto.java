@@ -10,7 +10,6 @@ public class StudentRequestDto {
     private String gender;
     private String address;
     private String dob;
-    private int bookId;
 
     public String getName() {
         return name;
@@ -74,13 +73,5 @@ public class StudentRequestDto {
 
     public void setDob(String dob) {
         this.dob = dob;
-    }
-
-    public int getBookId() {
-        return bookId;
-    }
-
-    public void setBookId(int bookId) {
-        this.bookId = bookId;
     }
 }
