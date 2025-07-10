@@ -6,5 +6,6 @@ public enum BookCategory {
     HORROR,
     TECHNICAL,
     SCIFI,
-    STORY
+    STORY,
+    THRILLER
 }
